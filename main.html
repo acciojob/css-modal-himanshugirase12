@@ -11,21 +11,21 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
-	<!-- Hidden checkbox to control modal open/close -->
+	<!-- Hidden checkbox to control modal state -->
 <input type="checkbox" id="modal-toggle" hidden>
 
-<!-- Button -->
-<label for="modal-toggle" id="openModal">Open Modal</label>
+<!-- Button must be a <label> to toggle modal -->
+<label id="openModal" for="modal-toggle">Open Modal</label>
 
-<!-- Modal -->
+<!-- Overlay (clicking closes modal) -->
 <label class="modal" for="modal-toggle">
   <div class="modal-content" onclick="event.stopPropagation()">
 
     <div class="modal-header">
       <h2>Modal Header</h2>
 
-      <!-- Close Button -->
-      <label for="modal-toggle" class="close-modal">&times;</label>
+      <!-- Close button -->
+      <label class="close-modal" for="modal-toggle">&times;</label>
     </div>
 
     <div class="modal-body">
@@ -34,6 +34,8 @@
 
   </div>
 </label>
+
+
 
 
 	
