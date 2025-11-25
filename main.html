@@ -11,6 +11,32 @@
     <script type="text/javascript" src="./script.js">
 </script>
 
+	<!-- Hidden checkbox to control modal open/close -->
+<input type="checkbox" id="modal-toggle" hidden>
+
+<!-- Button -->
+<label for="modal-toggle" id="openModal">Open Modal</label>
+
+<!-- Modal -->
+<label class="modal" for="modal-toggle">
+  <div class="modal-content" onclick="event.stopPropagation()">
+
+    <div class="modal-header">
+      <h2>Modal Header</h2>
+
+      <!-- Close Button -->
+      <label for="modal-toggle" class="close-modal">&times;</label>
+    </div>
+
+    <div class="modal-body">
+      <p>Modal Body Content</p>
+    </div>
+
+  </div>
+</label>
+
+
+	
 </body>
 
 </html>
